@@ -15,10 +15,10 @@ public class TiendaService {
 
     public TiendaService() {
         // Productos semilla (puedes ajustar cantidades y precios base)
-        productos.add(new Producto(1, "lápiz",     TipoProducto.PAPELERIA,  new BigDecimal("10.00"), 18, 15));
-        productos.add(new Producto(2, "aspirina",  TipoProducto.DROGUERIA,  new BigDecimal("97.77"), 25, 20));
-        productos.add(new Producto(3, "borrador",  TipoProducto.PAPELERIA,  new BigDecimal("178.72"),30, 25));
-        productos.add(new Producto(4, "pan",       TipoProducto.SUPERMERCADO,new BigDecimal("144.23"),15, 15));
+        productos.add(new Producto(1, "lápiz",     TipoProducto.PAPELERIA,  new BigDecimal("1500.00"), 18, 15));
+        productos.add(new Producto(2, "aspirina",  TipoProducto.DROGUERIA,  new BigDecimal("30000.00"), 25, 20));
+        productos.add(new Producto(3, "borrador",  TipoProducto.PAPELERIA,  new BigDecimal("100.00"),30, 25));
+        productos.add(new Producto(4, "pan",       TipoProducto.SUPERMERCADO,new BigDecimal("500.00"),15, 15));
         // Marca pedido si ya está en/por debajo del umbral
         productos.forEach(p -> p.setPedido(requierePedido(p)));
     }
